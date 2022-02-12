@@ -1,0 +1,206 @@
+.caption {
+	flex: 30%;
+	color: white;
+
+}
+
+.bigCaption {
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 40px 0 0 40px;
+	padding: 20px;
+}
+
+.smallCaption {
+	margin: 0 0 0 40px;
+	padding: 20px;	
+}
+
+button.buy {
+	margin: 10px 0 30px 60px;
+	padding: 8px 20px 8px 20px;
+	background-color: #313415;
+	border: 1px solid #313415;
+	border-radius: 50px;
+	color: white;
+}
+
+button.explore {
+	margin: 10px 0 30px 10px;
+	padding: 8px 20px 8px 20px;
+	background-color: #8B9E70;
+	border: 1px solid white;
+	border-radius: 50px;
+	color: white;
+}
+.image {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 70%;
+	justify-content: flex-end;
+	/*background-color: white;*/
+}
+.image img {
+	width: 80%;
+	margin-top: -5%;
+}
+
+.middle {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+}
+
+.box1 {
+	flex: 25%;
+
+}
+
+.box {
+	flex: 25%;
+	align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+
+
+.box1 {
+	padding-left: 40px;
+	text-align: left;
+}
+
+.box1 .smallCaption {
+	font-size: 0.8em;
+	color: #D2D2D2;
+}
+.box img{
+	width: 100%;
+	padding: 20px;
+}
+
+.box:hover {
+	background-color: #F5F5F5;
+}
+
+.footer {
+	background-color: #8B9E70;
+	height: 3em;
+}
+
+
+@media screen and (max-width: 938px) {
+  .caption, .image, .box, .boxColor, .imageColor {
+  	flex: 100%;
+  	align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+.bigCaption, .smallCaption, button.buy {
+	margin-left: 0;
+}
+button.buy, button.explore {
+	margin-bottom: 80px;
+}
+.image img, .imageColor img {
+	width: 100%;
+	margin-top: -15%;
+}
+
+.box1 {
+	text-align: center;
+	padding-left: 0;
+}
+
+.box img, .boxColor img {
+	width: 70%;
+	padding: 20px;
+	margin: 20px;
+}
+
+nav.mobile {
+	display: block;
+}
+nav.desktop {
+	display: none;
+}
+/*Mobile nav styling*/
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #313415;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mobile .openbtn {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	/*border: 1px solid rgba(255,255,255,.8);*/
+	border-radius: 5px;
+	color: rgba(255,255,255,.5);
+	background: rgba(0, 0, 0,0.0);
+	padding: 3px;
+	/*width: 5%;*/
+}
+
+.mobile h1 {
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	margin-left: 50px;
+	margin-top: 5px;
+	transition: margin-left .5s;
+	color: white;
+	/*display: block;*/
+	/*margin-bottom: 50px;*/
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#container {
+  transition: margin-left .5s;
+  padding: 16px;
+  /*margin-top: 15px;*/
+}
+
+ul li {
+	display: block;
+}
+}
