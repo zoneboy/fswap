@@ -187,11 +187,11 @@ button.explore {
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .zone {
-    padding:30px 50px;
+    padding:10px 20px;
     /*cursor:pointer;*/
     color:#FFF;
     font-size:2em;
@@ -203,7 +203,7 @@ button.explore {
 	text-align: center;
 }
 .product .productText {
-	text-align: center;
+	text-align: left;
 	font-size: 0.6em;
 }
 .box {
