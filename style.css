@@ -256,18 +256,18 @@ button.explore {
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-	height: 3em;
+	/*height: 3em;*/
 	display: flex;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	color: white;
 }
 .change {
-	/*flex: 30%;*/
+	flex: 30%;
 }
 .footerText {
-	/*flex: 30%;*/
+	flex: 30%;
 	/*margin-left: 100px;*/
 }
 .btn {
@@ -277,7 +277,7 @@ button.explore {
 	color: inherit;
 }
 .copyright{
-	/*flex: 30%;*/
+	flex: 30%;
 }
 .social button {
 	cursor: pointer;
@@ -293,13 +293,15 @@ button.explore {
   }
 }
 @media screen and (max-width: 938px) {
-  .caption, .image, .box, .boxColor, .imageColor {
+  .caption, .image, .box, .boxColor, .imageColor,.change, .copyright, .footerText {
   	flex: 100%;
   	align-items: center;
   justify-content: center;
   text-align: center;
   }
-
+.change, .copyright, .footerText {
+	margin: 20px;
+}
 .bigCaption, .smallCaption, button.buy {
 	margin-left: 0;
 }
