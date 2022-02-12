@@ -209,7 +209,7 @@ button.explore {
 .box {
     background: linear-gradient(to left, #330099, #EB007E) !important;
     padding: 50px;
-    margin: 20px;
+    
     /*display: flex;
     flex-wrap: wrap;*/
     /*z-index: -1;*/
